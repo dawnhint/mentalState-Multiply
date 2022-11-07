@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+p {
+    font-size: 15px;
+    line-height: 24px;
+}
+.main {
+    width: 1300px;
+    height: 700px;
+    border: solid 2px black;
+    margin: auto;
+    margin-top: min(30px);
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (min-height: 850px) {
+    .main{
+        margin-top: 5%;
+    }
+}
+
+section {
+    display: inline-block;
+    height: 100%;
+}
+
+/* 中间 */
+.middle {
+    width: 460px;
+    background-color: #FFF7F2;
+    border: 0.7px solid #000000;
+    padding-left: 90px;
+    position: relative;
+}
+
+h1 {
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+ul {
+    width: 270px;
+}
+ul li {
+    margin: 5px 0;
+    padding: 5px 0;
+    font-size: 15px;
+    line-height: 28px;
+    list-style: square;
+}
+ul li:hover {
+    background-color:rgba(239, 208, 148, 0.9);
+    /* color: #ffffff; */
+    cursor: default;
+}
+.xd {
+    padding-left: 20px;
+    color: #BD8A2B;
+    display: none;
+}
+.line1:hover .xd {
+    display: inline;
+}
+
+p.leaf {
+    display: inline-block;
+    width: 200px;
+    margin-top: 70px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    color: #BD8A2B;
+    font-size: 14px;
+    line-height: 30px;
+}
+.leaf_pic {
+    position:absolute;
+    top: 500px;
+    left: 130px;
+    transition: 500ms;
+}
+.leaf_pic:hover {
+    transform: rotate(-45deg) translateY(50px);
+    transition: 500ms;
+    cursor: default;
+}
+
+
+/* 左 */
+.left {
+    position: relative;
+    width: 350px;
+}
+.left h2 {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+.intro {
+    margin-left: 50px;
+    width: 250px;
+}
+.page1 {
+    display: inline-block;
+    width: 180px;
+    background-color: #FFF7F2;
+    color: #5A5A5A;
+    padding: 20px;
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    transform: rotate(10deg);
+}
+.page1 p,.page2 p,.page3 p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.page2 {
+    display: inline-block;
+    width: 155px;
+    background-color: #FFF7F2;
+    padding: 20px;
+    position: absolute;
+    top: 330px;
+    left: 10px;
+}
+
+.page1,.page2,.page3 {
+    transition: 500ms;
+}
+
+.page1:hover,.page2:hover,.page3:hover {
+    transform: scale(1.1);
+    transition: 500ms;
+}
+.page3:hover {
+    transform: scale(1.1) rotate(-5deg);
+    transition: 500ms;
+}
+
+
+.page3 {
+    width: 150px;
+    background-color: #FFF7F2;
+    padding: 20px;
+    position: absolute;
+    bottom: 120px;
+    right: 10px;
+}
+
+
+/* 右 */
+section.right {
+    padding: 20px;
+    width: 330px;
+    background-color: #ffffff;
+
+}
